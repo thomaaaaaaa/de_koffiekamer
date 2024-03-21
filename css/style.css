@@ -1,0 +1,263 @@
+
+/* KOFFIEKAMER!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.koffiekamer{
+    background-image: url("../media/achter_koffiekamer.png");
+    max-width: 100%;
+    max-height: 100%;
+}
+.harold_staan_blanco{
+    position: absolute;
+    margin-left: 70%;
+    z-index: 3
+}
+.koffiekamer>a:nth-of-type(2){
+    position: absolute;
+    margin-left: 70%;
+    z-index: 4
+}
+.koffiekamer>img{
+    margin-left: 67%;
+    position: absolute;
+}
+.koffiekamer>img{
+    margin-left: 67%;
+    position: absolute;
+}
+.koffiekamer>div{
+    background-color: rgba(0, 0, 0, 0.79);
+    width: 46%;
+    padding: 2%;
+    margin-left: 7%;
+    margin-top: 7%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 50px;
+}
+.koffiekamer>div>h1{
+    font-size: 5em;
+    color:rgb(255, 255, 255);
+    margin-top: -0.2%;
+    margin-bottom: -3%;
+    }
+.koffiekamer>div>h2{
+    font-size: 3em;
+    margin-top: 10%;
+    color: rgb(235, 235, 235);
+    }
+.koffiekamer>div>p{
+    font-size: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: -2%;
+    color: rgb(224, 224, 224);
+    }
+.koffiekamer>div>p:nth-of-type(3){
+    font-size: 2.58em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 9%;
+    color: rgb(255, 255, 255);
+    }
+#harold_staan{
+    position: absolute;
+    margin-left: 65%;
+    margin-top: -4%;
+    }
+/* DOCENT HAROLD*/
+/*MENUBALK.........................................................................*/
+.docent1 {
+    background-image: url("../media/achter_harold.png");
+    }
+/*Terugknop*/
+.koptekst{
+    width: 90%;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+.koptekst a {
+    margin-top: 2%;
+    margin-right: 2%; 
+    background-color: white;
+    border-radius: 50px;
+    padding: 2%;
+    margin-left: 2%;
+    font-size: 3em;
+    height: 2%;
+    }
+/*Terugknop*/
+/*Paginatitel*/    
+.koptekst h1{
+    font-size: 4em;
+    margin-left: 2%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    color: white;
+    }
+/*Timer*/
+.docent1>div:nth-of-type(1)>p{
+    margin-left: 86%;
+    margin-top: 2%;
+    font-size: 3em;
+    background-color: white;
+    padding: 2%;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 10;
+    }
+/*KLEREN OP HAROLD..............................................................................................*/
+.docent1>div:nth-of-type(2)>img{
+    width: 37%;
+    margin-top: 0.2%;
+}
+.docent1>div:nth-of-type(2){
+    margin-top: -7.8%;
+    margin-left: 59%;
+}
+#haroldBasis{
+    position: absolute;
+    z-index: -1;
+}
+#laag_bril{
+    position: absolute;
+    z-index: 2;
+}
+#laag_zonnebril{
+    position: absolute;
+    z-index: 4;
+    margin-left: -0.65%;
+}
+#laag_groteBril{
+    position: absolute;
+    z-index: 4;
+    margin-left: -0.65%;
+}
+#laag_petje{
+    position: absolute;
+    z-index: 0;
+    margin-left: -0.5%;
+}
+#laag_paarsShirt{
+    position: absolute;
+    z-index: 1;
+    margin-left: -0.65%;
+}
+#laag_petBlauw{
+    position: absolute;
+    z-index: 1;
+    margin-left: -0.65%;
+}
+#laag_beanie{
+    position: absolute;
+    z-index: 1;
+    margin-left: -0.65%;
+}
+#laag_hoodie{
+    position: absolute;
+    z-index: 1;
+    margin-left: 0%;
+}
+#laag_shirtZwart{
+    position: absolute;
+    z-index: 1;
+    margin-left: -0.65%;
+}
+#laag_turtleneck{
+    position: absolute;
+    z-index: 1;
+}
+#laag_baret{
+    position: absolute;
+    z-index: 1;
+}
+#laag_monocle{
+    position: absolute;
+    z-index: 1;
+}
+/*LIJST VAN KLEREN..........................................................*/
+.itemsHarold{
+    width: 60%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    }
+.itemsHarold>div{
+    margin-left: 1%;
+    width: 30%;
+    height: 500px;
+    }
+.itemsHarold img{
+    width: 100%;
+    }
+.haroldBrillen{
+    background-color: #30303086;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 200px;
+    }
+.haroldHoeden{
+    background-color: #30303086;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 200px;
+    }
+.haroldShirts{
+    background-color: #30303086;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 200px;
+    }
+/*KLERENLIJST*/
+/*HINTS*/
+.docent1>div:nth-of-type(4){
+    background-color: white;
+    border-radius: 30px;
+    width: 50%;
+    margin-left: 2%;
+    margin-top: 1%;
+    padding-left: 1%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+.docent1>div:nth-of-type(4)>button{
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2%
+}
+.docent1>div:nth-of-type(4)>h2{
+    margin-bottom: -2%;
+}
+/*HINTS*/
+/*HAROLDKLAAR*/
+.docent1>div:nth-of-type(5){
+    background-color: rgb(255, 255, 255);
+    padding: 5%;
+    width: 45%;
+    height: 58%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    position: absolute;
+    z-index: 10;
+    margin-top: -41%;
+    margin-left: 0.5%;
+    text-align: center;
+    border-radius: 50px
+    }
+.docent1>div:nth-of-type(5)>a{
+    font-size: 0.5em;
+    background-color: rgb(226, 226, 226);
+    padding: 4%;
+    border-radius: 50px
+    }
+.docent1>div:nth-of-type(5)>p:nth-of-type(1){
+    margin-top: -6%;
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+    }
+.docent1>div:nth-of-type(5)>p:nth-of-type(2){
+    margin-top: 5%;
+    font-size: 0.8em;
+    color: rgb(177, 177, 177);
+    }
+/*OVERIG....................................*/
+.hidden{
+    display: none;
+}
