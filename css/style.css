@@ -5,7 +5,7 @@
     max-width: 100%;
     max-height: 100%;
 }
-.harold_staan_blanco{
+.haroldStaanBlanco{
     position: absolute;
     margin-left: 70%;
     z-index: 3
@@ -58,7 +58,7 @@
     margin-top: 9%;
     color: rgb(255, 255, 255);
     }
-#harold_staan{
+#haroldStaan{
     position: absolute;
     margin-left: 65%;
     margin-top: -4%;
@@ -117,59 +117,59 @@
     position: absolute;
     z-index: -1;
 }
-#laag_bril{
+#laagBril{
     position: absolute;
     z-index: 2;
 }
-#laag_zonnebril{
+#laagZonnebril{
     position: absolute;
     z-index: 4;
     margin-left: -0.65%;
 }
-#laag_groteBril{
+#laagGroteBril{
     position: absolute;
     z-index: 4;
     margin-left: -0.65%;
 }
-#laag_petje{
+#laagPetje{
     position: absolute;
     z-index: 0;
     margin-left: -0.5%;
 }
-#laag_paarsShirt{
+#laagPaarsShirt{
     position: absolute;
     z-index: 1;
     margin-left: -0.65%;
 }
-#laag_petBlauw{
+#laagPetBlauw{
     position: absolute;
     z-index: 1;
     margin-left: -0.65%;
 }
-#laag_beanie{
+#laagBeanie{
     position: absolute;
     z-index: 1;
     margin-left: -0.65%;
 }
-#laag_hoodie{
+#laagHoodie{
     position: absolute;
     z-index: 1;
     margin-left: 0%;
 }
-#laag_shirtZwart{
+#laagShirtZwart{
     position: absolute;
     z-index: 1;
     margin-left: -0.65%;
 }
-#laag_turtleneck{
+#laagTurtleneck{
     position: absolute;
     z-index: 1;
 }
-#laag_baret{
+#laagBaret{
     position: absolute;
     z-index: 1;
 }
-#laag_monocle{
+#laagMonocle{
     position: absolute;
     z-index: 1;
 }

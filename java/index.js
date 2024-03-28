@@ -1,10 +1,11 @@
-//////////////AUDIO
-let kleedGeluid = new Audio ('../media/plop.mp3');
-let klaarGeluid = new Audio ('../media/tada.mp3');
+///////////////////////////////////////AUDIO///////////////////////////////////////////
+const kleedGeluid = new Audio ('media/plop.mp3');
     //audiobron: mijn mond :)
+const klaarGeluid = new Audio ('media/tada.mp3');
+    //audiobron: windows 4 !!
     //bron hoe dit te doen: https://gomakethings.com/how-to-play-a-sound-with-javascript/
 
-//////////////HINTS
+//////////////////////////////////////HINTS////////////////////////////////////////////
 //hulp van bron: chatgpt, met prompt "can you provide steps for how to write a line of code in javascript that links the press of a button to a text change, to a different random item from an array?"
 const haroldHints = [
     "Ik probeer wat minder koffie te drinken...",
@@ -12,35 +13,40 @@ const haroldHints = [
     "Het jaarkompas wijst altijd de weg!",
 ];
 
+const knopVoorHint = document.querySelector("#hintKnop");
+const hintVanHarold = document.querySelector("#haroldHint");
 function nieuweHint() {
     const randomIndex = Math.floor(Math.random() * haroldHints.length);
     const gekozenHint = haroldHints[randomIndex];
-    document.getElementById("haroldHint").textContent = gekozenHint;
+    hintVanHarold.textContent = gekozenHint;
 }
-document.getElementById("hintKnop").addEventListener("click", nieuweHint);
-    
-//////AANKLEDEN HAROLD
+knopVoorHint.addEventListener("click", nieuweHint);
+
+
+///////////////////////////////AANKLEDEN HAROLD//////////////////////////////////////
 let haroldBrilGoed = false;
 let haroldShirtGoed = false;
 let haroldHoedGoed = false;
-//AANKLEDEN: BRILLEN
-//GEWONE BRIL
-const knop_bril = document.querySelector("#item_bril");
-const brilLaag = document.querySelector("#laag_bril");
+
+///////////////////AANKLEDEN: BRILLEN/////
+//GEWONE BRIL//
+const knopBril = document.querySelector("#itemBril");
+const brilLaag = document.querySelector("#laagBril");
 function toonBril(){
     brilLaag.classList.toggle("hidden");
     zonnebrilLaag.classList.add("hidden")
     groteBrilLaag.classList.add("hidden");
     monocleLaag.classList.add("hidden");
     haroldBrilGoed = !haroldBrilGoed;
-    // hier wordt getoggled! bron: chatgpt, "how do i toggle a boolean between true and false within a function?"
+    //hier wordt getoggled! bron: chatgpt, "how do i toggle a boolean between true and false within a function?"
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_bril.addEventListener('click', toonBril);
-//ZONNEBRIL
-const knop_zonnebril = document.querySelector("#item_zonnebril");
-const zonnebrilLaag = document.querySelector("#laag_zonnebril");
+knopBril.addEventListener('click', toonBril);
+
+//ZONNEBRIL//
+const knopZonnebril = document.querySelector("#itemZonnebril");
+const zonnebrilLaag = document.querySelector("#laagZonnebril");
 function toonzonnebril(){
     zonnebrilLaag.classList.toggle("hidden");
     brilLaag.classList.add("hidden");
@@ -50,10 +56,11 @@ function toonzonnebril(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_zonnebril.addEventListener('click', toonzonnebril);
-//MONOCLE
-const knop_monocle = document.querySelector("#item_monocle");
-const monocleLaag = document.querySelector("#laag_monocle");
+knopZonnebril.addEventListener('click', toonzonnebril);
+
+//MONOCLE//
+const knopMonocle = document.querySelector("#itemMonocle");
+const monocleLaag = document.querySelector("#laagMonocle");
 function toonMonocle(){
     monocleLaag.classList.toggle("hidden");
     brilLaag.classList.add("hidden");
@@ -63,10 +70,11 @@ function toonMonocle(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_monocle.addEventListener('click', toonMonocle);
+knopMonocle.addEventListener('click', toonMonocle);
+
 //GROTEBRIL//
-const knop_groteBril = document.querySelector("#item_groteBril");
-const groteBrilLaag = document.querySelector("#laag_groteBril");
+const knopGroteBril = document.querySelector("#itemGroteBril");
+const groteBrilLaag = document.querySelector("#laagGroteBril");
 function toongroteBril(){
     groteBrilLaag.classList.toggle("hidden");
     brilLaag.classList.add("hidden");
@@ -76,11 +84,13 @@ function toongroteBril(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_groteBril.addEventListener('click', toongroteBril);
-//AANKLEDEN: HOEDEN//
+knopGroteBril.addEventListener('click', toongroteBril);
+
+
+///////////////////AANKLEDEN: HOEDEN/////
 //PETJE//
-const knop_petje = document.querySelector("#item_petje");
-const petjeLaag = document.querySelector("#laag_petje");
+const knopPetje = document.querySelector("#itemPetje");
+const petjeLaag = document.querySelector("#laagPetje");
 function toonPetje(){
     petjeLaag.classList.toggle("hidden");
     petBlauwLaag.classList.add("hidden");
@@ -90,10 +100,11 @@ function toonPetje(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_petje.addEventListener('click', toonPetje);
+knopPetje.addEventListener('click', toonPetje);
+
 //PETBLAUW//
-const knop_petBlauw = document.querySelector("#item_petBlauw");
-const petBlauwLaag = document.querySelector("#laag_petBlauw");
+const knopPetBlauw = document.querySelector("#itemPetBlauw");
+const petBlauwLaag = document.querySelector("#laagPetBlauw");
 function toonPetBlauw(){
     petBlauwLaag.classList.toggle("hidden");
     petjeLaag.classList.add("hidden");
@@ -103,10 +114,11 @@ function toonPetBlauw(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_petBlauw.addEventListener('click', toonPetBlauw);
+knopPetBlauw.addEventListener('click', toonPetBlauw);
+
 //BEANIE
-const knop_beanie = document.querySelector("#item_beanie");
-const beanieLaag = document.querySelector("#laag_beanie");
+const knopBeanie = document.querySelector("#itemBeanie");
+const beanieLaag = document.querySelector("#laagBeanie");
 function toonBeanie(){
     beanieLaag.classList.toggle("hidden");
     petjeLaag.classList.add("hidden");
@@ -116,10 +128,11 @@ function toonBeanie(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_beanie.addEventListener('click', toonBeanie);
+knopBeanie.addEventListener('click', toonBeanie);
+
 //BARET
-const knop_baret = document.querySelector("#item_baret");
-const baretLaag = document.querySelector("#laag_baret");
+const knopBaret = document.querySelector("#itemBaret");
+const baretLaag = document.querySelector("#laagBaret");
 function toonBaret(){
     baretLaag.classList.toggle("hidden");
     petjeLaag.classList.add("hidden");
@@ -129,11 +142,13 @@ function toonBaret(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_baret.addEventListener('click', toonBaret);
-//AANKLEDEN: SHIRTS
+knopBaret.addEventListener('click', toonBaret);
+
+
+///////////////////AANKLEDEN: SHIRTS/////
 //PAARSSHIRT
-const knop_paarsShirt = document.querySelector("#item_paarsShirt");
-const paarsShirtLaag = document.querySelector("#laag_paarsShirt");
+const knopPaarsShirt = document.querySelector("#itemPaarsShirt");
+const paarsShirtLaag = document.querySelector("#laagPaarsShirt");
 function toonpaarsShirt(){
     paarsShirtLaag.classList.toggle("hidden");            
     shirtZwartLaag.classList.add("hidden");
@@ -143,10 +158,11 @@ function toonpaarsShirt(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_paarsShirt.addEventListener('click', toonpaarsShirt);
+knopPaarsShirt.addEventListener('click', toonpaarsShirt);
+
 //SHIRTZWART
-const knop_shirtZwart = document.querySelector("#item_shirtZwart");
-const shirtZwartLaag = document.querySelector("#laag_shirtZwart");
+const knopShirtZwart = document.querySelector("#itemShirtZwart");
+const shirtZwartLaag = document.querySelector("#laagShirtZwart");
 function toonshirtZwart(){
     shirtZwartLaag.classList.toggle("hidden");
     paarsShirtLaag.classList.add("hidden");
@@ -156,10 +172,11 @@ function toonshirtZwart(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_shirtZwart.addEventListener('click', toonshirtZwart);
+knopShirtZwart.addEventListener('click', toonshirtZwart);
+
 //HOODIE
-const knop_hoodie = document.querySelector("#item_hoodie");
-const hoodieLaag = document.querySelector("#laag_hoodie");
+const knopHoodie = document.querySelector("#itemHoodie");
+const hoodieLaag = document.querySelector("#laagHoodie");
 function toonhoodie(){
     hoodieLaag.classList.toggle("hidden");
     paarsShirtLaag.classList.add("hidden");
@@ -169,10 +186,11 @@ function toonhoodie(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_hoodie.addEventListener('click', toonhoodie);
+knopHoodie.addEventListener('click', toonhoodie);
+
 //TURTLENECK
-const knop_turtleneck = document.querySelector("#item_turtleneck");
-const turtleneckLaag = document.querySelector("#laag_turtleneck");
+const knopTurtleneck = document.querySelector("#itemTurtleneck");
+const turtleneckLaag = document.querySelector("#laagTurtleneck");
 function toonturtleneck(){
     turtleneckLaag.classList.toggle("hidden");
     paarsShirtLaag.classList.add("hidden");
@@ -182,10 +200,10 @@ function toonturtleneck(){
     kleedGeluid.play();
     checkOfKlaar();
     }
-knop_turtleneck.addEventListener('click', toonturtleneck);
+knopTurtleneck.addEventListener('click', toonturtleneck);
 
 
-//VOLTOOIINGSCHECK//
+///////////////////VOLTOOIINGSCHECK/////
 let haroldklaar = false
 const terugknop = document.querySelector("#terugknop");
 function checkOfKlaar(){
@@ -197,11 +215,16 @@ function checkOfKlaar(){
         clearInterval(timerInterval);
         terugknop.href = "docentgevonden.html";
         }}
-//TIMER//
+
+
+/////////////////////TIMER///////////////
 //telt omhoog tijdens maken mannetje: stopt als je klaar bent en displayt die tijd!//
 //met hulp van bron: chatgpt, "Can you provide me the steps to build a JavaScript timer, counting up from zero, with four digits, that stops when the boolean "haroldKlaar" is changed to true, and changes the text content of "ZOVEELTIJD" to the amount of time passed?"
     let startTijd = 0;
     let timerInterval;
+    const timerDisplay = document.querySelector("#timer");
+    const TimerWaarde = document.querySelector("#TimerTijd");
+
     function startTimer() {
         startTijd = Date.now();
         timerInterval = setInterval(updateTimer, 1000);
@@ -212,8 +235,8 @@ function checkOfKlaar(){
         const minuten = Math.floor(tijdVoorbij / 60);
         const seconden = tijdVoorbij % 60;
         const formattedTime = padNumber(minuten) + ':' + padNumber(seconden);
-        document.getElementById('timer').textContent = formattedTime;
-        document.getElementById('TimerTijd').textContent = "Goed werk! Je hebt de docent van vandaag gevonden in " + formattedTime + ".";
+        timerDisplay.textContent = formattedTime;
+        TimerWaarde.textContent = "Goed werk! Je hebt de docent van vandaag gevonden in " + formattedTime + ".";
     }
     function padNumber(number) {
         return (number < 10 ? '0' : '') + number;
